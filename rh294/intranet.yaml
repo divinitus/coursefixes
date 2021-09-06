@@ -11,8 +11,8 @@
       state: latest
     - name: test html page is installed
       copy:
-      content: "Welcome to the example.com intranet!\n"
-      dest: /var/www/html/index.html
+        content: "Welcome to the example.com intranet!\n"
+        dest: /var/www/html/index.html
     - name: firewalld enabled and running
       service:
         name: firewalld
